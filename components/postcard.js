@@ -11,7 +11,7 @@ const postcard = () => {
     "flex gap-2 p-2 hover:bg-blue-300 hover:bg-opacity-40 rounded-md hover:-mx-2 transition-all hover:shadow-sm hover:shadow-gray-400 hover:text-base";
   return (
     <Card>
-      <div className="flex  items-center grow">
+      <div className="flex pt-3 px-2 items-center grow">
         <Link href="/profile">
             <span className="cursor-pointer">
           <Avatar />
@@ -19,7 +19,7 @@ const postcard = () => {
         </Link>
         <div className="grow">
           <p className="text-black-600 text-md">
-            <Link href={"/profile"}><span className="font-semibold hover:underline">Monalisa Dey</span></Link> shared a{" "}
+            <Link href={"/profile"}><span className="font-semibold hover:underline">Anushka Dey</span></Link> shared a{" "}
             <a href="#" className="font-semibold">photo</a>
           </p>
           <p className="text-gray text-sm">two hours ago</p>
@@ -143,7 +143,7 @@ const postcard = () => {
           </ClickOutHandler>
         </div>
       </div>
-      <div className="p-3 ">
+      <div className="py-2 px-5">
         <p className="text-sm">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -154,7 +154,7 @@ const postcard = () => {
       <div className="px-5 py-2">
         <img
           className="rounded-md overflow-hidden"
-          src="https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+          src="https://images.unsplash.com/photo-1561909381-3d716364ad47?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2063&q=80"
           alt=""
         />
       </div>
@@ -213,12 +213,14 @@ const postcard = () => {
       </div>
       <div className="flex mt-2 pb-4">
         <Avatar />
-        <div className="flex w-full pr-3 h-12 pt-2 relative">
+        <div className="flex w-full pr-3 h-12 pt-2 gap-1">
+          <div className=" w-11/12">
           <textarea
-            className="w-full rounded-full  overflow-hidden border border-gray-400 block pt-1 pl-3"
+            className="w-full rounded-full h-10 overflow-hidden border border-gray-400 block pt-1 pl-3"
             placeholder="Leave a comment"
           />
-          <button className="absolute right-6 top-4">
+          </div>
+          <button className="right-6 top-4 w-1/12">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

@@ -1,10 +1,10 @@
 'use client'
 import Card from "../../../../components/card";
-// import Avatar from "../../../../avatar";
 import Layout from "../../../../components/layout";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Avatar from "../../../../components/avatar";
+import FriendInfo from "../../../../components/friendinfo";
 
 export default function AboutPage() {
   const pathname = usePathname();
@@ -114,9 +114,28 @@ export default function AboutPage() {
       </Card>
       <Card>
         <div className="p-4">
-        <h2 className=" text-4xl font-semibold mb-6 text-gray-400">About ME</h2>
-        <p className=" mb-2 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p className="mb-2 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2 className=" text-4xl font-semibold mb-6 ml-2 text-gray-400">Friends</h2>
+        <div>
+            <div className=" border-b -mx-2 p-0.5">
+            <FriendInfo />    
+            </div>
+            <div className=" border-b -mx-2 p-0.5">
+            <FriendInfo />    
+            </div>
+            <div className=" border-b -mx-2 p-0.5">
+            <FriendInfo />    
+            </div>
+            <div className=" border-b -mx-2 p-0.5">
+            <FriendInfo />    
+            </div>
+            <div className=" border-b -mx-2 p-0.5">
+            <FriendInfo />    
+            </div>
+            <div className=" border-b -mx-2 p-0.5">
+            <FriendInfo />    
+            </div>
+            
+        </div>
         </div>
       </Card>
     </Layout>

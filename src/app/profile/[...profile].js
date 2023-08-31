@@ -1,6 +1,6 @@
 'use client'
 import Card from "../../../components/card";
-import Layout from "../../../components/layyout";
+import Layout from "../../../components/layout";
 import Avatar from "../../../components/avatar";
 import Postcard from "../../../components/postcard";
 import { usePathname } from "next/navigation";
